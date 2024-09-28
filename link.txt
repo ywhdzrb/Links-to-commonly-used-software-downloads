@@ -1,0 +1,54 @@
+#amusement
+https://act-api-takumi.mihoyo.com/event/download_porter/link/hkrpg_cn/official/pc_default #yuanshen
+https://ys-api.mihoyo.com/event/download_porter/link/ys_cn/official/pc_default #star rail
+https://api-takumi.mihoyo.com/event/download_porter/link/nap_cn/official/pc_ldy #zzz
+https://dl.hdslb.com/mobile/fixed/bili_win/bili_win-install.exe #bilibili
+https://media.cdn.queniuqe.com/client/installer/SteamSetup.exe #steam
+
+#routine
+https://go.microsoft.com/fwlink/?linkid=2109047&Channel=Stable&language=zh-cn&brand=M100 #edge
+https://files2.freedownloadmanager.org/6/latest/fdm_x64_setup.exe #fdm
+https://download.kugou.com/dl/kugou_pc #kugou
+
+#office
+https://official-package.wpscdn.cn/wps/download/WPS_Setup_18276.exe #wps
+https://creativecloud.adobe.com/apps/download/photoshop #ps
+https://creative.adobe.com/zh-cn/products/download/premiere #pr
+https://mirrors.tuna.tsinghua.edu.cn/github-release/obsproject/obs-studio/OBS%20Studio%2030.2.3/OBS-Studio-30.2.3-Windows-Installer.exe #obs
+
+#programmed
+https://mirrors.tuna.tsinghua.edu.cn/blender/blender-release/Blender4.2/blender-4.2.1-windows-x64.msi #blender
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda3-2023.03-Windows-x86_64.exe #anaconda
+https://mirrors.tuna.tsinghua.edu.cn/docker-ce/win/static/stable/x86_64/docker-27.3.0.zip #docker
+https://mirrors.tuna.tsinghua.edu.cn/github-release/git-for-windows/git/LatestRelease/Git-2.46.1-64-bit.exe #git
+https://www.python.org/ftp/python/3.12.6/python-3.12.6-amd64.exe #python
+https://aka.ms/vs/17/release/vc_redist.x64.exe #Visual Studio
+https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user #vscode
+https://download.oracle.com/java/17/archive/jdk-17.0.11_windows-x64_bin.exe #jdk
+
+#other
+https://zenlayer.dl.sourceforge.net/project/mingw-w64/mingw-w64/mingw-w64-release/mingw-w64-v11.0.0.zip?viasf=1 #gcc tools
+https://gitee.com/rmbgame/SteamTools/releases/download/3.0.0-rc.10/Steam%20%20_v3.0.0-rc.10_win_x64.exe #watt toolkit
+git config --global http.sslVerify false #git ssl off
+conda config --set show_channel_urls yes #.condarc
+#conda tsinghua source
+channels:
+  - defaults
+show_channel_urls: true
+default_channels:
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2
+custom_channels:
+  conda-forge: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+  pytorch: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+conda clean -i
+conda config --set custom_channels.auto https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/
+#pip tsinghua source
+python -m pip install --upgrade pip
+pip config set global.index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
+#website
+https://mirrors.tuna.tsinghua.edu.cn/ #清华大学开源软件站
+https://www.github.com/ #github
+https://www.bilibili.com/ #bilibili
+
